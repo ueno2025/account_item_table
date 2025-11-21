@@ -1,0 +1,79 @@
+/* --- 全体レイアウト --- */
+body {
+    font-family: sans-serif;
+    margin: 20px;
+}
+
+/* 中央配置 */
+.table-wrapper {
+    max-width: 100%;
+    margin: 0 auto;
+    overflow-x: auto;
+    border-radius: 8px;
+}
+
+/* --- テーブル本体 --- */
+.yaku-table {
+    width: 90%;
+    border-collapse: collapse;
+    font-size: 14px;
+    margin: 20px auto;
+}
+
+.yaku-table th,
+.yaku-table td {
+    padding: 6px 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.yaku-table th {
+    background: #f0f0f0;
+}
+
+.yaku-table tr:hover {
+    background: #fafafa;
+}
+
+/* --- グラフエリア --- */
+.chart-wrapper {
+    width: 90%;
+    margin: 20px auto;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* キャンバスが潰れるのを防ぐ */
+.accountChart {
+    width: 100% !important;
+    max-width: 90%;
+    height: 300px !important;
+    margin: 0 auto;
+    display: block;
+}
+
+/* --- 小さい画面（スマホ）専用 --- */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    .yaku-table {
+        font-size: 12px;
+    }
+
+    .yaku-table th,
+    .yaku-table td {
+        padding: 4px 6px;
+    }
+
+    .chart-wrapper {
+        width: 100%;
+        margin: 10px auto;
+        padding: 5px 0;
+    }
+
+    .accountChart {
+        height: 220px !important;
+    }
+}
