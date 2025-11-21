@@ -36,6 +36,10 @@ body {
 }
 
 /* --- グラフエリア --- */
+#graph-area {
+    display: none;   /* ← 最初は非表示 */
+}
+
 .chart-wrapper {
     width: 90%;
     margin: 20px auto;
