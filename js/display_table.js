@@ -85,6 +85,9 @@ export async function display_table(company_data) {
         select.appendChild(opt);
     });
 
+    // 非表示にしていた部分を映す
+    document.getElementById("graph-area").style.display = "block";
+
     // 初期グラフ描画
     drawGraph(periods, valueMap[kamokuList[0]], kamokuList[0]);
 
