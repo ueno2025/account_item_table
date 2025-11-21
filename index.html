@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>勘定科目表示サイト</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+    <h2>勘定科目表示サイト</h2>
+    <form method="GET">
+        <label for="code_input">証券コードか企業名を入力:</label>
+        <input type="text" id="code_input" name="code" placeholder="例:7523,アールビバン">
+        <button type="submit">検索</button>
+    </form>
+
+    <div id="candidates"></div>
+    <div id="header_result"></div>
+
+    <div id="graph-area" class="chart-wrapper">
+        <label>勘定科目：</label>
+        <select id="accountSelect"></select>
+
+        <canvas id="accountChart" class="accountChart"></canvas>
+    </div>
+
+    <div id="result" class="table-wrapper"></div>
+
+
+    <script type="module" src="./js/main.js"></script>
+
+</body>
+
+</html>
